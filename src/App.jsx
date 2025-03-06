@@ -16,7 +16,7 @@ export default function App() {
     // Make fetch request and store the response
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=${apiKey}&t=${searchTerm}`
       );
       // Parse JSON response into a JavaScript object
       const data = await response.json();
